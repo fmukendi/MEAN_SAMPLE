@@ -1,63 +1,61 @@
 {
- "name": "app",
- "version": "1.0.0",
- "description": "MEAN OR MEA2N OR MERN Application START",
- "main": "server.js",
- "dependencies": {
-   "body-parser": "^1.18.1",
-   "bower": "^1.8.2",
-   "connect-flash": "^0.1.1",
-   "cookie-parser": "^1.4.3",
-   "express": "^4.15.4",
-   "express-handlebars": "^3.0.0",
-   "express-session": "^1.15.5",
-   "mongodb": "^2.2.31",
-   "morgan": "^1.8.2",
-   "mssql": "^4.0.4",
-   "passport": "^0.4.0",
-   "passport-local": "^1.0.0",
-   "path": "^0.12.7",
-   "serve-favicon": "^2.4.4",
-   "socket.io": "^2.0.3",
-   "underscore": "^1.8.3",
-   "vash": "^0.12.2"
- },
- "devDependencies": {
-   "grunt": "^1.0.1",
-   "grunt-contrib-concat": "^1.0.1",
-   "grunt-contrib-copy": "^1.0.0",
-   "grunt-contrib-sass": "^1.0.0",
-   "grunt-contrib-uglify": "^3.1.0",
-   "grunt-contrib-watch": "^1.0.0",
-   "grunt-ngdocs": "^0.2.10",
-   "gulp": "^3.9.1",
-   "gulp-inject": "^4.3.0",
-   "gulp-jscs": "^4.0.0",
-   "gulp-jshint": "^2.0.4",
-   "gulp-nodemon": "^2.2.1",
-   "jshint": "^2.9.5",
-   "jshint-stylish": "^2.2.1",
-   "wiredep": "^4.0.0"
- },
- "scripts": {
-   "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "npm install && bower install  && node server.js"
- },
- "repository": {
-   "type": "git",
-   "url": "https://github.com/colorfest/angularjs.git"
- },
- "keywords": [
-   "acciocode",
-   "angularjs",
-   "javascript"
- ],
- "author": "Franck Mukendi",
- "license": "ISC",
- "bugs": {
-   "url": "https://github.com/colorfest/angularjs/issues"
- },
- "homepage": "https://github.com/colorfest/angularjs"
+  "name": "app",
+  "version": "1.0.0",
+  "description": "MEAN OR MEA2N OR MERN Application START",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "bower": "^1.8.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "mongodb": "^2.2.31",
+    "morgan": "^1.8.2",
+    "mssql": "^4.0.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.4",
+    "socket.io": "^2.0.3",
+    "underscore": "^1.8.3",
+    "vash": "^0.12.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ngdocs": "^0.2.10",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.3.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "wiredep": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && bower install  && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colorfest/angularjs.git"
+  },
+  "keywords": [
+    "acciocode",
+    "angularjs",
+    "javascript"
+  ],
+  "author": "Franck Mukendi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colorfest/angularjs/issues"
+  },
+  "homepage": "https://github.com/colorfest/angularjs"
 }
-
-
