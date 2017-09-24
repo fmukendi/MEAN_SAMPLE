@@ -4,14 +4,13 @@
     <title> @model.title </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <!--BootStrap-->
-    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" /> 
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" /> 
     <!--Font Awsome-->
-    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!-- Angular Toaster-->
-    <link href="/lib/angular-toastr/dist/angular-toastr.css" />
+    <link href="/lib/angular-toastr/dist/angular-toastr.css"  rel="stylesheet"/>
     <!-- Angular Material Design-->
-    <link href="/lib/angular-material/angular-material.css" />
+    <link href="/lib/angular-material/angular-material.css"  rel="stylesheet"/>
     <!-- Site Css-->
     <link href="/css/styles.css" rel="stylesheet" />
     @html.block("head")
