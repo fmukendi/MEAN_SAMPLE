@@ -42,3 +42,15 @@ git commit -m  'commit message'
 git commit -am  'commit message'
 
 git status
+
+
+///// KILL RUNNING SERVERS 
+
+Windows Machine:
+
+Need to kill a Node.js server, and you don't have any other Node processes running, you can tell your machine to kill all processes named node.exe. That would look like this:
+
+taskkill /im node.exe
+And if the processes still persist, you can force the processes to terminate by adding the /f flag:
+
+taskkill /f /im node.exe

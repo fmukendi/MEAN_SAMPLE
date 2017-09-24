@@ -1,0 +1,82 @@
+/* Styles go here */
+
+.required:before,first-letter { 
+    content:"* "; 
+    color: red;
+}
+
+.app-modal-window .modal-dialog {
+  /*width: 1250px;*/
+}
+
+.modal-xl {
+    width: 80%;
+}
+
+.modal-xxl {
+    width: 90%;
+}
+
+.modal-xxxl {
+    width: 100%;
+}
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+tr {
+  cursor: pointer;
+  clear: both;
+  list-style-type: none;
+  width: 350px;
+  height: 20px;
+}
+
+.selected {
+  background-color: cadetblue;
+}
+
+.tableHeader {
+    font-weight: bold;
+    color: 	#1E90FF;
+    text-align: left;
+}
+
+/* --------------ANIMATION--------------*/
+
+/* The starting CSS styles for the enter animation */
+main.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+
+/* The finishing CSS styles for the enter animation */
+main.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+ .ninja.ng-enter{
+    transition: 0.2s linear all;
+    opacity:0;
+    transform: translateY(30px);
+}
+
+ .ninja.ng-enter.ng-enter-active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+  .ninja.ng-leave{
+    transition: 0.2s linear all;
+    opacity:1;
+    transform: translateX(O);
+}
+
+ .ninja.ng-leave.ng-leave-active{
+    opacity:0;
+    transform:translateX(-100%);
+}
+

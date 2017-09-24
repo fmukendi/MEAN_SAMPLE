@@ -1,7 +1,31 @@
 @html.extend('layout',function(model){
-@html.block("body",function(model){
 
-      <div> HELLO WORLD </div>
+@html.block("scripts",function(model){
+    <!--Modules-->
+    <script src="/js/appMuke/Modules/app.js"></script>
+    <!--Models-->
+    <script src="/js/appMuke/Models/modelMain.js"></script>
+    <!--directives-->
+    <script src="/js/appMuke/Directives/appShowErrors.js"></script>
+    <script src="/js/appMuke/Directives/appPattern.js"></script>
+    <!--services-->
+    <script src="/js/appMuke/Services/alertServ.js"></script>
+    <script src="/js/appMuke/Services/inputMainDataServ.js"></script>
+    <!--filters or Data Cleaner-->
+    <script src="/js/appMuke/Filters/inputMainDataCleaner.js"></script>
+    <!--constants-->
+    <script src="/js/appMuke/Constants/appSettings.js"></script>
+    <script src="/js/appMuke/Constants/appMessages.js"></script>
+    <script src="/js/appMuke/Constants/appURLs.js"></script>
+    <!--controllers-->
+    <script src="/js/appMuke/Controllers/HomeController.js"></script>
+    <script src="/js/appMuke/Controllers/MainController.js"></script>
+    <script src="/js/appMuke/Controllers/PopUpMainController.js"></script>
+  })
 
-})
+      @html.block("body",function(model){
+            <div class="container" ng-controller="MainController" id="divContent">
+                  <main id="currentStateView" ui-view=""></main>
+            </div>
+      })
 })
