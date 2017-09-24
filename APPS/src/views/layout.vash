@@ -1,9 +1,79 @@
 <!doctype html>
 <html>
-   <head>
-       <title> @model.title </title>
-   </head>
-<body>
-  <div>  @html.block("body") </div>
-</body>
+  <head>
+    <title> @model.title </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> 
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" /> 
+    <link href="/css/styles.css" rel="stylesheet" />
+    @html.block("head")
+  </head>
+  <body>
+    
+    <header id="top">
+      <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header"
+           role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id ="aTop" href="#top">
+              <img src="/images/site-logo-white-70pct.png" />
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a id="aHome" href="#top">Home</a>
+              </li>
+              <li>
+                <a id="aServices"  href="#sights">Services</a>
+              </li>
+              <li>
+                <a id="aSee"  href="#sports">See US</a>
+              </li>
+              <li>
+                <a id="aHelp"  href="#activities">Help</a>
+              </li>
+              <li>
+                <a id="aContact"  href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+
+    </header>
+
+    <div class="container-fluid">
+      @html.block("body")
+    </div>
+
+
+    <footer class="container-fluid">
+      <div class="row">
+        <h1>FOOTER</h1>
+      </div>
+    </footer>
+    
+    
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/underscore/underscore.js"></script>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    @html.block("scripts")
+  </body>
 </html>
