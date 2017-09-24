@@ -2,60 +2,47 @@
 <html>
   <head>
     <title> @model.title </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <!--BootStrap-->
     <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" /> 
+    <!--Font Awsome-->
+    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Angular Toaster-->
+    <link href="/lib/angular-toastr/dist/angular-toastr.css" />
+    <!-- Angular Material Design-->
+    <link href="/lib/angular-material/angular-material.css" />
+    <!-- Site Css-->
     <link href="/css/styles.css" rel="stylesheet" />
     @html.block("head")
   </head>
-  <body>
-    
-    <header id="top">
-      <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header"
-           role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id ="aTop" href="#top">
-              <img src="/images/site-logo-white-70pct.png" />
-            </a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a id="aHome" href="#top">Home</a>
-              </li>
-              <li>
-                <a id="aServices"  href="#sights">Services</a>
-              </li>
-              <li>
-                <a id="aSee"  href="#sports">See US</a>
-              </li>
-              <li>
-                <a id="aHelp"  href="#activities">Help</a>
-              </li>
-              <li>
-                <a id="aContact"  href="#contact-us">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+  <body style="margin:0px;padding:0px" ng-app="appMuke" class="loading">
+    <input type="hidden" value="hey" id="hddIdx" />
+    <nav class="navbar navbar-inverse" style="background-color:#018069;">
+      <div class="container" ng-controller="HomeController">
+        <a class="navbar-brand navbar-link" href="" style="color:white;">
+              AngularSample1</a>
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
         </div>
-        <!-- /.container-fluid -->
-      </nav>
-
-    </header>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-text" id="LogInLabel" style="color:white;">Logged In As</li>
+            <li class="navbar-text" id="userNameLabel" style="color:white;">{{userDisplayName}}</li>
+            <li id="settings">
+              <a href="" class="glyphicon glyphicon-cog" title="Go To Account Administration" style="color:white;"></a>
+            </li>
+            <li>
+              <a href="" class="glyphicon glyphicon-log-out" title="Log Out" style="color:white;"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container-fluid">
       @html.block("body")
@@ -68,12 +55,23 @@
       </div>
     </footer>
     
-    
+    <!-- Jquery-->
     <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <!-- BootStrap-->
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- UnderScore-->
     <script src="/lib/underscore/underscore.js"></script>
+    <!-- Angular-->
     <script src="/lib/angular/angular.min.js"></script>
-    <script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/lib/angular-animate/angular-animate.js"></script>
+    <!-- Angular BootStrap-->
+    <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- Angular Toaster-->
+    <script src="/lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <!-- Angular Material Design-->
+    <script src="/lib/angular-aria/angular-aria.js"></script>
+    <script src="/lib/angular-material/angular-material.js"></script>
     @html.block("scripts")
   </body>
 </html>
